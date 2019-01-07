@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Atlas Geography Game</title>
+        <link rel = "stylesheet" href = "{{url_for('static', filename = 'stylesheet.css')}}">
+    </head>
+    <h1><center>Atlas</center></h1>
+    <body bgcolor = "#99ff66">
+    <p><h3><center>How the game works?</center></h3></p>
+        <p><center>So basically how it works is a country is picked at random (Ex. Canada) by the computer
+        and what happens is that the user must think of a country that starts with the last letter of that
+        country. So for example if Canada was selected then the user chooses Afghanistan as 'a' is the last
+        letter of 'Canada'. Then the user would have to think of another country but, this time
+        the user has to think of a country that starts with 'n' as that is the last letter in Afghanistan.
+        One of the rules of Atlas is that a user must not repeat a country that has already been inputted.
+        if they do then the game end and a score is tallied.</center></p>
+    </body>
+    <body>
+        <h1><center>Enter your name down below</center></h1>
+        <center><form action = "{{url_for('index2')}}" method = "POST">
+            <label>Player Name</label>
+            <br>
+            <input type = "text" name = "username" style="width:90%;" placeholder="Name goes here">
+            <br>
+            <input type = "submit" value = "Submit">
+        </form></center>
+    </body>
+</html>
