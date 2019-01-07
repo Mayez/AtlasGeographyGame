@@ -9,7 +9,9 @@ How Atlas Works:
                 jquery.js
                 stylesheet.css
                 countries.json
-              
+        
+        Things needed: Pycharm IDE, MYsql connector, flask
+        
         So basically how it works is a country is picked at random (Ex. Canada) by the computer
         and what happens is that the user must think of a country that starts with the last letter of that
         country. So for example if Canada was selected then the user chooses Afghanistan as 'a' is the last
