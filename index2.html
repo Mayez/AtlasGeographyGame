@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Time to play</title>
+    </head>
+
+    <h1><center>Time to play the game!!</center></h1>
+    <body bgcolor= "99ff66">
+    <p><center>Hello {{username}}, so as you know the rules of the game were explained previously.
+    </center></p>
+    </body>
+    <br>
+
+    <body>
+    <center><h1>Here is the random country: {{country}}</h1></center>
+    <h1><center>Enter the country below</center></h1>
+    <center><form action = "/index3" method = "POST">
+        <label>Country Name:</label>
+        <br>
+        <input type = "text" id = "countryName" name = "countryName" style="width:90%;">
+        <br>
+        <input type = "submit" name = "form" value = "Submit">
+    </form></center>
+ <!--   <div id = "container">
+        <center><input type = "text" id = "countryName" name = "countryName" placeholder = "Enter the country here"></center>
+    </div>
+    <center><p>Here is what you typed: <div id = "result"></div></p></center>
+    <script type = "text/javascript" src="static/jquery.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#countryName').focus();
+            $('#countryName').keypress(function(event){
+                var key = (event.keyCode ? event.keyCode : event.which);
+                if(key == 13){
+                    var info = $('#countryName').val();
+                    $('#result').text(info);
+                    $('#countryName').val('');
+
+                    event.preventDefault();
+                }
+
+            });
+        });
+    </script>
+ -->   </body>
+
+</html>
