@@ -1,5 +1,15 @@
 How Atlas Works:
 
+        The file structure for this to work is as follows:
+        testing.py
+        templates:                       <--templates is the name of the folder housing these files
+                index.html
+                index2.html
+        static:                             <--static is the name of the folder housing these files
+                jquery.js
+                stylesheet.css
+                countries.json
+              
         So basically how it works is a country is picked at random (Ex. Canada) by the computer
         and what happens is that the user must think of a country that starts with the last letter of that
         country. So for example if Canada was selected then the user chooses Afghanistan as 'a' is the last
